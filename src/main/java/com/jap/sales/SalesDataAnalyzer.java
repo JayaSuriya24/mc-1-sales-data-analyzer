@@ -17,20 +17,14 @@ public class SalesDataAnalyzer {
     }
 
     // Sort the customers based on purchase amount
-    public List<SalesRecord> getAllCustomersSortedByPurchaseAmount(
-            List<SalesRecord> salesData,
-            AmountComparator amountComparator
-    ) {
+    public List<SalesRecord> getAllCustomersSortedByPurchaseAmount(List<SalesRecord> salesData, AmountComparator amountComparator) {
         List<SalesRecord> salesRecordList = new ArrayList<>();
         // sort the sales record list, according to the criteria set by the amountComparator parameter
         return salesRecordList;
     }
 
     // Find the top customer who spent the maximum time on the site
-    public SalesRecord getTopCustomerWhoSpentMaxTimeOnSite(
-            List<SalesRecord> salesData,
-            TimeOnSiteComparator timeOnSiteComparator
-    ) {
+    public SalesRecord getTopCustomerWhoSpentMaxTimeOnSite(List<SalesRecord> salesData, TimeOnSiteComparator timeOnSiteComparator) {
         SalesRecord customerWhoSpentMaxTimeOnSite = new SalesRecord();
         // sort the sales data, according to the time spent on site, we want to find out the record
         // with the maximum time spent on site
